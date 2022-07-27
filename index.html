@@ -5,7 +5,6 @@
     <title>HTML Practice</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <div id="wrapper">
       <div id="main">
@@ -32,7 +31,8 @@
                 <p>
                   The h1 to h6 HTML elements represent six levels of section
                   headings. h1 is the highest section level and h6 is the
-                  lowest. Use only one h1 per page.
+                  lowest. <br />
+                  Use<b> only one h1</b> per page.
                 </p>
                 <h2>Header 2</h2>
                 <h3>Header 3</h3>
@@ -44,26 +44,142 @@
                   This is a
                   <a href="">test link</a>. <strong>This is strong</strong>.<em>
                     This is emphasized</em
-                  >. Math symbols 5<sup>3</sup> = 125. Chemical symbols
-                  H<sub>2</sub>O. <i>"F**ck the fuel economy"</i> (That&#39;s a
-                  citation).<u> Underline</u>.
+                  >. Math symbols 8<sup>3</sup> = 512. Chemical symbols
+                  C<sub>2</sub>H<sub>5</sub>OH.
+                  <i>"F**ck the fuel economy"</i> (That&#39;s a citation).<u>
+                    Underline</u
+                  >.
                 </p>
                 <p>
                   To buy a car type <kbd>'BUY CAR'</kbd> <i>car model</i>.
                   <s>Motorcycles are better</s>.
                   <span style="background-color: yellow"
-                    >Let&#39; make a rally.</span
+                    >Let&#39;s make a rally.</span
                   >
                   This <s>cop</s> has been struck.
                 </p>
               </section>
               <hr />
-
-
-              
+              <section>
+                <h2 id="table">Table creation</h2>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Header 1</th>
+                      <th>Header 2</th>
+                      <th>Header 3</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Audi</td>
+                      <td>Volvo</td>
+                      <td>BMW</td>
+                    </tr>
+                    <tr>
+                      <td>Ferrari</td>
+                      <td>Lamborgini</td>
+                      <td>Jaguar</td>
+                    </tr>
+                    <tr>
+                      <td>Tesla</td>
+                      <td>Maseratti</td>
+                      <td>Lotus</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h2 id="list">Unordered List</h2>
+                <ul>
+                  <li>Car model 1</li>
+                  <li>
+                    Car model 2
+                    <ul>
+                      <li>Some nested Car model 1</li>
+                    </ul>
+                  </li>
+                  <li>Car model 3</li>
+                </ul>
+                <h2>Ordered List</h2>
+                <ol>
+                  <li>Car oil 1</li>
+                  <li>
+                    Car oil 2
+                    <ol type="A">
+                      <li>Some nested Car oil 1</li>
+                    </ol>
+                  </li>
+                  <li>Car oil 3</li>
+                </ol>
+                <h3>Definition List</h3>
+                <dl>
+                  <dt>sets terms 1</dt>
+                  <dd>description of list 1</dd>
+                  <dt>sets terms 2</dt>
+                  <dd>description of list 2</dd>
+                </dl>
+                <label for="details">Select item</label>
+                <select name="details" id="details">
+                  <option value="">Cars</option>
+                  <option value="">Car parts</option>
+                  <option value="">Car oils</option>
+                </select>
+              </section>
+              <hr />
+              <section>
+                <h2 id="textformats">Text formatting</h2>
+                <h3>Example of Article Text</h3>
+                <article>
+                  <h2>Article name</h2>
+                  <p>Article body</p>
+                </article>
+                <h3>Preformatted Text</h3>
+                <h3>Code is goog to write with <b>pre</b> tag.</h3>
+                <pre>
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}             
+              </pre
+                >
+                <pre>
+<b>Text</b>
+  The <b>pre</b> tag
+    is used to insert a preformatted
+text, into an HTML document.
+The           spaces and
+    line breaks in     the      text
+are     preserved.
+              </pre>
+                <h2 id="blockquotes">Blockquotes</h2>
+                <p>Style the citations with blockquote tag.</p>
+                <blockquote>
+                  “Have you ever noticed that anybody driving slower than you is
+                  an idiot, and anyone going faster than you is a maniac?”
+                  <br /><a href="#">George Carlin</a>
+                </blockquote>
+                <hr />
+                <form action="#">
+                  <label for="first-name">Car model:</label>
+                  <input type="text" name="first-name" id="first-name" /><br />
+                  <label for="surname">Car age:</label>
+                  <input type="text" name="surname" id="surname" /><br />
+                  <label for="email">Engine:</label>
+                  <input type="text" name="email" id="email" /><br />
+                  <textarea
+                    name="feedback"
+                    id="feedback"
+                    cols="26"
+                    rows="11"
+                  ></textarea
+                  ><br />
+                  <button>Buy</button>
+                </form>
+              </section>
             </main>
             <footer>
-              <p>&copy; Copyright Dream Cars</p>
+              <p>&copy; Copyright Dream Cars 2022</p>
             </footer>
           </div>
         </div>
